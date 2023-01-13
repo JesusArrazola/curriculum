@@ -1,0 +1,26 @@
+{
+  "name": "curriculum",
+  "version": "1.0.0",
+  "description": "Jesus Arrazola's Curriculum vitae and portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesusArrazola/curriculum.git"
+  },
+  "author": "Jesus Arrazola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesusArrazola/curriculum/issues"
+  },
+  "homepage": "https://github.com/JesusArrazola/curriculum#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

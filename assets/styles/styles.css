@@ -29,6 +29,7 @@ body{
 }
 .action-button:hover{
     background-color: var(--primary);
+    transition: background-color 0.5s;
     color: var(--white);
 }
 .styled-link{
@@ -51,9 +52,17 @@ body{
     color: var(--primary);
     padding: 2px;
 }
+.transition{
+    transition:visibility 1s, opacity 1s; 
+    visibility:hidden; opacity:0;
+}
+.visible{
+    visibility: visible;
+    opacity: 1;
+}
 /* Header */
 header{
-    
+    opacity: 0;
     display: flex;
     align-items: baseline;
     justify-content: flex-end;
