@@ -1,0 +1,12 @@
+/* Definir la fuente Roboto */
+@font-face {
+    font-family: Roboto-regular;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+/* Estilos por defecto */
+:root{
+    font-size: 14px;
+}
+*,*::after,*::before{
+    font-family: 'Roboto-Regular';
+}
