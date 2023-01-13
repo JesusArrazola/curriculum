@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jesús Arrazola | Desarrollador web</title>
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
-<body onload="uwu()">
+<body>
     <div id="root">
-        <header class="component-top transition">    
+        <header class="component-top">    
             <nav class="menu-header">
                 <a class="action-button" href="#">Descargar CV</a>
                 <a href="#">Portafolio</a>
@@ -22,22 +22,19 @@
                 <h1>Jesús Arrazola &FilledVerySmallSquare; Desarrollador web Fullstack</h1>
                 <cite>Soy una persona <em class="emphasised">autodidacta</em>. <br> Esta profesión evoluciona a pasos agigantados, hay que seguirle el ritmo.</cite>
             </section>
-            <button id="btnAppear">Hoka</button>
+            <section id="skillset">
+                <p class="tag">Wordpress</p>
+                <p class="tag">HTML/CSS</p>
+                <p class="tag">JavaScript</p>
+                <p class="tag">React</p>
+                <p class="tag">Angular</p>
+                <p class="tag">PHP</p>
+                <p class="tag">NodeJS</p>
+            </section>
         </div>
         <footer class="component-bottom">
             Hecho con &hearts; por <a class="styled-link" href="https://github.com/JesusArrazola">Jesús Arrazola</a>
         </footer>
     </div>
-    <script>
-        const uwu = ()=>{
-            let header = document.querySelector('header');
-            header.classList.add('visible');
-        }
-
-        let btnAppear = document.querySelector('#btnAppear');
-        btnAppear.addEventListener('click',()=>{
-            uwu();
-        });
-    </script>
 </body>
 </html>
