@@ -5,8 +5,46 @@
 }
 /* Estilos por defecto */
 :root{
-    font-size: 14px;
+    font-size: 16px;
+    --primary: #D91438;
+    --dark: #590817;
+    --light:#DF5770;
+    --white:#ffeeff;
+    --black:#29040b;
 }
 *,*::after,*::before{
     font-family: 'Roboto-Regular';
+    color: var(--black);
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/* General styles */
+.action-button{
+    border: 2px solid var(--primary);
+    padding: 5px;
+    border-radius: 5px;
+}
+.action-button:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+/* Header */
+header{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.menu-header a{
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* Media Queries */
+
+@media (max-width:810px) {
+    header{
+        justify-content: center;
+    }
 }
