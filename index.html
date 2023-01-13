@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
-    <header>    
-        <nav class="menu-header">
-            <a class="action-button" href="#">Descargar CV</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
+    <div id="root">
+        <header class="component-top">    
+            <nav class="menu-header">
+                <a class="action-button" href="#">Descargar CV</a>
+                <a href="#">Portafolio</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+        <div id="content" class="component">
+            <section id="presentation">
+                <img src="./assets/img/profile_pic.jpg" alt="Jesús Arrazola">
+                <h1>Jesús Arrazola &FilledVerySmallSquare; Desarrollador web Fullstack</h1>
+                <cite>Soy una persona <em class="emphasised">autodidacta</em>. <br> Esta profesión evoluciona a pasos agigantados, hay que seguirle el ritmo.</cite>
+            </section>
+        </div>
+        <footer class="component-bottom">
+            Hecho con &hearts; por <a class="styled-link" href="https://github.com/JesusArrazola">Jesús Arrazola</a>
+        </footer>
+    </div>
 </body>
 </html>
