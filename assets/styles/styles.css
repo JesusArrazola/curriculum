@@ -23,8 +23,16 @@ body{
 }
 h1,h2,h3{
     text-align: center;
+    color: var(--dark);
 }
 /* General styles */
+.regular-paragraph{
+    line-height: 25px;
+}
+.regular-paragraph::first-letter{
+    font-size: 1.2rem;
+    color: var(--dark);
+}
 .tag{
     display: inline-block;
     background-color: var(--primary);
@@ -91,6 +99,11 @@ footer{
     justify-content: center;
 }
 /* Sections */
+section[id]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #presentation{
     display: flex;
     align-items: center;
@@ -100,7 +113,7 @@ footer{
 #presentation cite{
     text-align: center;
 }
-#presentation *{
+section[id] *{
     max-width: min(700px,85%);
 }
 #presentation img{
@@ -108,8 +121,9 @@ footer{
     height: auto;
     border-radius: 50%;
 }
-#skillset{
+section#skillset{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
