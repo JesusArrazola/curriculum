@@ -20,8 +20,25 @@ body{
 h1,h2,h3{
     text-align: center;
     color: var(--dark);
+    margin: 5px;
 }
 /* General styles */
+.card{
+    padding: 5px;
+    border: 1px solid gray;
+    /*box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.51);*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+p.data-item{
+    padding: 2px 5px;
+    border-radius: 50px;
+    background-color: rgb(235, 235, 235);
+    margin: 0;
+}
 .regular-paragraph{
     line-height: 25px;
     text-align: justify;
@@ -57,7 +74,7 @@ h1,h2,h3{
     margin: var(--component-gap) 0 0 0;
 }
 #content section{
-    margin: 10px;
+    margin: 20px 10px;
 }
 .title-1{
     color: var(--primary);
