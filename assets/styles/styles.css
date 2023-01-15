@@ -1,8 +1,3 @@
-/* Definir la fuente Roboto */
-@font-face {
-    font-family: Roboto-regular;
-    src: url('../fonts/Roboto-Regular.ttf');
-}
 /* Estilos por defecto */
 :root{
     font-size: 16px;
@@ -14,10 +9,11 @@
     --component-gap:30px;
 }
 *,*::after,*::before{
-    font-family: 'Roboto-Regular';
+    box-sizing: border-box;
     color: var(--black);
 }
 body{
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -141,6 +137,7 @@ section#skillset{
     background-color: var(--primary);
     color: white;
 }
+i,i::after,i::before{margin: 0 2px; color: inherit;}
 /* Form and Inputs */
 form{
     width: 100%;
