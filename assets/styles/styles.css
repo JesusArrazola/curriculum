@@ -84,10 +84,6 @@ p.data-item{
     color: var(--primary);
     padding: 2px;
 }
-.transition{
-    transition:visibility 1s, opacity 1s; 
-    visibility:hidden; opacity:0;
-}
 .visible{
     visibility: visible;
     opacity: 1;
@@ -137,6 +133,27 @@ section#skillset{
     justify-content: center;
     flex-wrap: wrap;
 }
+.job-item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.job-item p{ margin: 0; }
+.job-description{
+    width: 50%;
+}
+.job-title{
+    width: 100%;
+    border-bottom: 2px solid var(--primary);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.job-item p.job-duration{
+    align-self: flex-end;
+    margin: 10px 0 5px 0;
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -155,6 +172,7 @@ section#skillset{
     color: white;
 }
 i,i::after,i::before{margin: 0 2px; color: inherit;}
+
 /* Form and Inputs */
 form{
     width: 100%;
